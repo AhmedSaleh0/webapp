@@ -10,10 +10,10 @@
     <!-- Title of Website -->
     <title>I-plus &ndash; Coming Soon Landing Page</title>
 
-    <meta name="description" content="Coming Soon Landing Page" />
+    <meta name="description" content="I-plus - Freelancing social platform in Dubai" />
     <meta name="keywords"
-        content="Kounter, html theme, Coming Soon Landing Page, Coming Soon Landing Page template, html landing page, one page, responsive landing page" />
-    <meta name="author" content="Egotype">
+        content="I-plus,i-plus,iplus,IPLUS,freelancing,dubai,make money, side hustle" />
+    <meta name="author" content="Ahmed Saleh">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.png" type="image/png">
