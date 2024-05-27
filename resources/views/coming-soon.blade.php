@@ -578,7 +578,7 @@
 
 
 
-                                    <div class="col-sm-6  col-sm-offset-0 col-xs-6 col-xs-offset-3 p-t-b-5">
+                                    <div class="col-sm-6 col-xs-6 p-t-b-5">
 
                                         <!-- Icon -->
                                         <div class="p-t-b-15">
