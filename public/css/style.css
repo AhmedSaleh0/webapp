@@ -1138,11 +1138,11 @@ body.vegas-container > .vegas-slide {
   margin: auto;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 1000;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #fb24bf;
+  border: 2px solid #9544de;
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out;

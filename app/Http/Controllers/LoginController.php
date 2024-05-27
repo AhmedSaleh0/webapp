@@ -18,17 +18,22 @@ class LoginController extends Controller
 
         $response = $http->post(config('services.passport.login_endpoint'), [
             'form_params' => [
-                'grant_type' => 'password',
+                'grant_type' => 'client_credentials',
                 'client_id' => config('services.passport.client_id'),
                 'client_secret' => config('services.passport.client_secret'),
                 'username' => $request->username,
                 'password' => $request->password,
-                'scope' => '',
+                'scope' => '*',
             ],
         ]);
 
+        if ($response->getStatusCode() !== 200) {
+            return redirect()->back()->withErrors(['message' => 'Invalid credentials or unsupported grant type.']);
+        }
+
         $data = json_decode((string) $response->getBody(), true);
 
+        dd($data);
         // Store token in session
         $request->session()->put('passport_token', $data['access_token']);
 
