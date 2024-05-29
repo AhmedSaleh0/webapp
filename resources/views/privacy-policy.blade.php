@@ -268,7 +268,6 @@
         <h3>Legal information</h3>
         <p>This privacy policy relates solely to this Application, if not stated otherwise within this document.</p>
         <p>Latest update: May 29, 2024</p>
-        <p>iubenda hosts this content and only collects the Personal Data strictly necessary for it to be provided.</p>
     </div>
 
 </body>
