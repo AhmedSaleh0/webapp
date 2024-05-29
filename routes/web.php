@@ -18,3 +18,5 @@ Route::post('/reset-password', [ResetPasswordController::class, 'updatePassword'
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
 Route::post('/newsletter/unsubscribe', [NewsletterController::class, 'unsubscribe'])->name('newsletter.unsubscribe');
+
+Route::get('/privacy-policy', [HomeController::class, 'privacy'])->name('home.privacy');
