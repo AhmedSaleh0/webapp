@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EmailVerificationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NewsletterController;
@@ -20,3 +21,13 @@ Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
 Route::post('/newsletter/unsubscribe', [NewsletterController::class, 'unsubscribe'])->name('newsletter.unsubscribe');
 
 Route::get('/privacy-policy', [HomeController::class, 'privacy'])->name('home.privacy');
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/email/verify/{id}/{hash}', [EmailVerificationController::class, 'verify'])
+        ->middleware('signed')
+        ->name('verification.verify');
+
+    Route::post('/email/resend', [EmailVerificationController::class, 'resend'])
+        ->name('verification.resend');
+});
